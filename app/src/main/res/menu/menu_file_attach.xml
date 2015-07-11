@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="browser.xtreme.com.xtremefbrowser.activities.FileAttachActivity">
+    <item
+        android:id="@+id/ok"
+        android:icon="@mipmap/ic_action_accept"
+        android:showAsAction="always"
+        android:title="@string/action_settings" />
+</menu>

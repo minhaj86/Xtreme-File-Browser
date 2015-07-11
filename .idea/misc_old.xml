@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="DimensionService">
+    <location key="FileChooserDialogImpl.0.0.1366.768" x="463" y="253" />
+    <location key="WELCOME_SCREEN.0.0.1366.768" x="678" y="303" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1366.768" x="336" y="302" />
+    <location key="AndroidExtendedDeviceChooserDialog.0.0.1366.768" x="636" y="178" />
+    <location key="findTextDialog.0.0.1366.768" x="506" y="108" />
+    <location key="chooseDestDirectoryDialog.0.0.1366.768" x="475" y="327" />
+   

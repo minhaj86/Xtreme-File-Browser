@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>browser.xtreme.com</groupId>
+    <artifactId>gs-maven-android</artifactId>
+    <version>0.1.0</version>
+    <packaging>apk</packaging>
+    <properties>
+        <!-- use UTF-8 for everything -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!--checkstyle.config.location>config/sun_checks.xml</checkstyle.config.location -->
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.google.android</groupId>
+            <artifactId>android</artifactId>
+            <version>4.1.1.4</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.jayway.maven.plugins.android.generation2</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <version>3.9.0-rc.2</version>
+                <configuration>
+                    <sdk>
+                        <!--path>/home/mrl/Android/Sdk</path -->
+                        <platform>21</platform>
+                    </sdk>
+                    <deleteConflictingFiles>true</deleteConflictingFiles>
+                    <undeployBeforeDeploy>true</undeployBeforeDeploy>
+                </configuration>
+                <extensions>true</extensions>
+            </plugin>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.14</version>
+                <configuration>
+                    <sourceDirectory>app/src/main/java/</sourceDirectory>
+                    <configLocation>config/sun_checks.xml</configLocation>
+                </configuration>
+            </plugin>
+            <!--plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>2.14</version> <configuration> <cacheFile default-value="${project.build.directory}/checkstyle-cachefile"/>
+                <configLocation default-value="config/sun_checks.xml">${checkstyle.config.location}</configLocation>
+                <consoleOutput default-value="false"/> <enableFilesSummary default-value="true">${checkstyle.enable.files.summary}</enableFilesSummary>
+                <enableRSS default-value="true">${checkstyle.enable.rss}</enableRSS> <enableRulesSummary
+                default-value="true">${checkstyle.enable.rules.summary}</enableRulesSummary>
+                <enableSeveritySummary default-value="true">${checkstyle.enable.severity.summary}</enableSeveritySummary>
+                <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+                <excludes>${checkstyle.excludes}</excludes> <failsOnError default-value="false"/>
+                <format default-value="sun"/> <headerFile>${basedir}/LICENSE.txt</headerFile>
+                <headerLocation default-value="LICENSE.txt">${checkstyle.header.file}</headerLocation>
+                <includeTestSourceDirectory default-value="${false}"/> <includes default-value="**/*.java">${checkstyle.includes}</includes>
+                <linkXRef default-value="true">${linkXRef}</linkXRef> <outputDirectory default-value="${project.reporting.outputDirectory}"/>
+                <outputFile default-value="${project.build.directory}/checkstyle-result.xml">${checkstyle.output.file}</outputFile>
+                <outputFileFormat default-value="xml">${checkstyle.output.format}</outputFileFormat>
+                <project default-value="${project}"/> <propertiesLocation>${checkstyle.properties.location}</propertiesLocation>
+                <skip default-value="false">${checkstyle.skip}</skip> <sourceDirectory default-value="${project.build.sourceDirectory}"/>
+                <suppressionsFileExpression default-value="checkstyle.suppressions.file">${checkstyle.suppression.expression}</suppressionsFileExpression>
+                <suppressionsLocation>${checkstyle.suppressions.location}</suppressionsLocation>
+                <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+                <xrefLocation default-value="${project.reporting.outputDirectory}/xref"/>
+                </configuration> </plugin -->
+        </plugins>
+    </build>
+    <!--reporting> <plugins> <plugin> <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-checkstyle-plugin</artifactId> <configuration> <configLocation>config/sun_checks.xml</configLocation>
+        <configLocation>config/maven_checks.xml</configLocation> <configLocation>config/turbine_checks.xml</configLocation>
+        <configLocation>config/avalon_checks.xml</configLocation> </configuration>
+        </plugin> <plugin> <groupId>org.apache.maven.plugins</groupId> <artifactId>maven-jxr-plugin</artifactId>
+        </plugin> </plugins> </reporting -->
+</project>
