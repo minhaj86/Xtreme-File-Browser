@@ -1,4 +1,4 @@
-package browser.xtreme.com.xtremefbrowser.activities;
+package com.mjapps.mjfilebrowse.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -13,15 +13,15 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.mjapps.mjfilebrowse.R;
+import com.mjapps.mjfilebrowse.util.FileListAdapter;
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import browser.xtreme.com.xtremefbrowser.R;
-import browser.xtreme.com.xtremefbrowser.util.FileListAdapter;
 
 /*
 * Attach files

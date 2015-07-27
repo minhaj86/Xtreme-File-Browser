@@ -1,4 +1,4 @@
-package browser.xtreme.com.xtremefbrowser.activities;
+package com.mjapps.mjfilebrowse.activities;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -11,12 +11,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
 
+import com.mjapps.mjfilebrowse.R;
+
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
 import java.io.IOException;
-
-import browser.xtreme.com.xtremefbrowser.R;
 
 /*
 * Defines a text editor for text files

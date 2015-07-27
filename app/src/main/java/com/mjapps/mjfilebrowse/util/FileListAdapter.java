@@ -1,4 +1,4 @@
-package browser.xtreme.com.xtremefbrowser.util;
+package com.mjapps.mjfilebrowse.util;
 
 /**
  * Created by kishan on 17/04/15.
@@ -14,12 +14,12 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.mjapps.mjfilebrowse.R;
+import com.mjapps.mjfilebrowse.activities.FileListActivity;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
-import browser.xtreme.com.xtremefbrowser.R;
-import browser.xtreme.com.xtremefbrowser.activities.FileListActivity;
 
 public class FileListAdapter extends ArrayAdapter<String> {
 

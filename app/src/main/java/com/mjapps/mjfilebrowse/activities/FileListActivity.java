@@ -1,4 +1,4 @@
-package browser.xtreme.com.xtremefbrowser.activities;
+package com.mjapps.mjfilebrowse.activities;
 
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
@@ -28,6 +28,13 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.mjapps.mjfilebrowse.R;
+import com.mjapps.mjfilebrowse.util.ArrayAdapterWithIcon;
+import com.mjapps.mjfilebrowse.util.BasicFileUtil;
+import com.mjapps.mjfilebrowse.util.CacheCleaner;
+import com.mjapps.mjfilebrowse.util.FileListAdapter;
+import com.mjapps.mjfilebrowse.util.ZipUtils;
+
 import org.apache.commons.io.comparator.LastModifiedFileComparator;
 import org.apache.commons.io.comparator.SizeFileComparator;
 
@@ -41,13 +48,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-
-import browser.xtreme.com.xtremefbrowser.R;
-import browser.xtreme.com.xtremefbrowser.util.ArrayAdapterWithIcon;
-import browser.xtreme.com.xtremefbrowser.util.BasicFileUtil;
-import browser.xtreme.com.xtremefbrowser.util.CacheCleaner;
-import browser.xtreme.com.xtremefbrowser.util.FileListAdapter;
-import browser.xtreme.com.xtremefbrowser.util.ZipUtils;
 
 /*
 * Lists all the files and performs main activities

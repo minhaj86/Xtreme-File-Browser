@@ -1,4 +1,4 @@
-package browser.xtreme.com.xtremefbrowser.util;
+package com.mjapps.mjfilebrowse.util;
 
 import android.app.ActivityManager;
 import android.content.Context;

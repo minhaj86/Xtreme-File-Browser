@@ -1,4 +1,4 @@
-package browser.xtreme.com.xtremefbrowser.util;
+package com.mjapps.mjfilebrowse.util;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -8,10 +8,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.mjapps.mjfilebrowse.R;
+
 import java.util.Arrays;
 import java.util.List;
 
-import browser.xtreme.com.xtremefbrowser.R;
 
 /**
  * Created by kishan on 04/05/15.

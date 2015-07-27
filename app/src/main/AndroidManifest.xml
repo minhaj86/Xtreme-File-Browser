@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="browser.xtreme.com.xtremefbrowser"
+    package="com.mjapps.mjfilebrowse"
     android:versionCode="2"
     android:versionName="1.1">
 
@@ -15,12 +15,12 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/downloadfile"
-        android:label="Xtreme File Browser"
+        android:label="MJ File Browser"
         android:theme="@style/AppTheme">
 
         <activity
             android:name=".activities.FileListActivity"
-            android:label="Xtreme File Browser"
+            android:label="MJ File Browser"
             android:uiOptions="splitActionBarWhenNarrow">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,7 +42,7 @@
         </activity>
         <activity
             android:name=".activities.FileAttachmentActivity"
-            android:label="EditXTreme"
+            android:label="MJ File Browser"
             android:uiOptions="splitActionBarWhenNarrow">
             <intent-filter>
                 <action android:name="android.intent.action.GET_CONTENT" />

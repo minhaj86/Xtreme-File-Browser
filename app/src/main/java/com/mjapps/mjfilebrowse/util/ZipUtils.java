@@ -1,4 +1,4 @@
-package browser.xtreme.com.xtremefbrowser.util;
+package com.mjapps.mjfilebrowse.util;
 
 import net.lingala.zip4j.core.ZipFile;
 import net.lingala.zip4j.exception.ZipException;
